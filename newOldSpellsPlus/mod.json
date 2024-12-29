@@ -33,8 +33,8 @@
 		"1.0.4" : [ "Improved description" ]
     },
     "chinese" : {
-		"name": "Old New Spells",
-		"description": "Expand your magical arsenal with 9 iconic spells inspired by other Heroes of Might and Magic games.<br/><br/>This modification adds:<br/><br/>Confusion<br/>Deep Freeze<br/>Dragon Strength<br/>Fear<br/>Levitation<br/>Puppet Master<br/>Vampirism<br/>Vigour<br/>Wasp Swarm",
+		"name": "旧新法术",
+		"description": "扩展你的魔法库，新增9个灵感来自《英雄无敌》其他版本的标志性法术。<br/><br/>本模组新增以下法术：<br/><br/>混乱<br/>深度冻结<br/>龙之力量<br/>恐惧<br/>漂浮<br/>傀儡大师<br/>群体吸血鬼化<br/>活力迸发<br/>蜂群滋扰",
 		"translations" : [
 			"config/NewOldSpells/translation/chinese.json"
 		]
