@@ -33,7 +33,9 @@
 			"noneOf" : {
 				"core:bonus.MIND_IMMUNITY": "normal",
 				"core:bonus.NON_LIVING": "normal",
-				"core:bonus.UNDEAD": "normal"
+				"core:bonus.UNDEAD": "normal",
+				"core:bonus.GARGOYLE": "normal",
+				"core:bonus.MECHANICAL": "normal"
 			}
 	}, 
 	
@@ -57,7 +59,7 @@
 			"base":
 			{
 				"power": 10,
-				"aiValue": 12,
+//				"aiValue": 12,
 				"range": "0",
 				"targetModifier":
 				{

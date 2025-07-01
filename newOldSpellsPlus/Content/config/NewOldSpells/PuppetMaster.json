@@ -33,7 +33,9 @@
 			"noneOf" : {
 				"core:bonus.MIND_IMMUNITY": "normal",
 				"core:bonus.NON_LIVING": "normal",
-				"core:bonus.UNDEAD": "normal"
+				"core:bonus.UNDEAD": "normal",
+				"core:bonus.GARGOYLE": "normal",
+				"core:bonus.MECHANICAL": "normal"				
 			}
 	},	
  
@@ -43,7 +45,6 @@
 			"iconScroll": "NewOldSpells/puppetMScroll.bmp",
 			"iconScenarioBonus": "NewOldSpells/puppetMScenario.bmp",
 			"iconEffect": "NewOldSpells/puppetMEffect.bmp",
-			
 			"iconImmune": "NewOldSpells/puppetMImmune.bmp"
 		},
 
@@ -58,7 +59,7 @@
 			"base":
 			{
 				"power": 10,
-				"aiValue": 20,
+//				"aiValue": 20,
 				"range": "0",
 				"targetModifier":
 				{

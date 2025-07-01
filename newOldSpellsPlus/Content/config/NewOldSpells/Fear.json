@@ -29,7 +29,8 @@
 				"core:bonus.NON_LIVING": "normal",
 				"core:bonus.GARGOYLE": "normal",
 				"core:bonus.MECHANICAL": "normal",
-				"core:bonus.FEARLESS": "normal",
+//				"core:bonus.FEARLESS": "normal",
+				"core:bonus.FEARFUL": "normal",				
 				"core:bonus.UNDEAD": "normal"
 			}
 	},	
@@ -54,7 +55,7 @@
 			{
 				"range": "0",
 				"power": 1,
-				"aiValue": 50,
+//				"aiValue": 50,
 				"targetModifier":
 				{
 					"smart": true

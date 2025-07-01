@@ -32,7 +32,7 @@
 			"allOf" : {},
 			"anyOf" : {},			
 			"noneOf" : {
-				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal"
+//				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal"
 
 			}
 	}, 
@@ -61,7 +61,7 @@
 		{
 			"base":
 			{
-				"aiValue": 15,
+//				"aiValue": 15,
 				"range": "0",
 				"targetModifier":
 				{
