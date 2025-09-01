@@ -36,7 +36,7 @@
 		"1.0.3" : [ "Added russian translation" ],
 		"1.0.4" : [ "Improved description" ],
 		"1.0.5" : [ "Fear spell fix by kdmcser" ],
-		"1.0.6" : [ "Update to vcmi-1.7 format" ]
+		"1.0.6" : [ "Update to vcmi-1.7 format" ],
 		"1.0.7" : [ "Another update to vcmi-1.7 format" ]
     },
     "chinese" : {
