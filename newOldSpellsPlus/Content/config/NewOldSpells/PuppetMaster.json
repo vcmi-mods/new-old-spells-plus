@@ -94,9 +94,23 @@
 			{
 				"description": "{Basic Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slowed down.\n",				
 				"cost": 25,
-	 
+
 				"effects":
 				{
+					"undead":
+					{
+						"type": "HYPNOTIZED",
+						"duration": [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					},
+					"speed":
+					{
+						"type": "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"val": -50
+					}
 				}
 			},
 			"advanced":
@@ -128,7 +142,6 @@
 				"description": "{Expert Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage.\n",
 	 
 				"cost": 25,
-	 
 				"effects":
 				{
 					"undead":

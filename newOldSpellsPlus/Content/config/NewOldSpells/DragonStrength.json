@@ -63,14 +63,7 @@
 				"targetModifier":
 				{
 					"smart": true
-				}
-			},
-			"none":
-			{
-				"description": "{Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
-	 
-				"cost": 30,
-	 
+				},
 				"effects":
 				{
 					"health":
@@ -88,32 +81,19 @@
 						"valueType": "PERCENT_TO_ALL",
 						"duration": "N_TURNS"
 					}
-				}
+				}				
+			},
+			"none":
+			{
+				"description": "{Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
+	 
+				"cost": 30
 			},
 			"basic":
 			{
 				"description": "{Basic Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
 	 
 				"cost": 25,
-	 
-				"effects":
-				{
-					"health":
-					{
-						"type": "STACK_HEALTH",
-						"val": 50,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
-					},
-					"damage":
-					{
-						"type": "CREATURE_DAMAGE",
-						"subtype": "creatureDamageBoth",
-						"val" : 50,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
-					}
-				}
 			},
 			"advanced":
 			{
@@ -125,18 +105,11 @@
 				{
 					"health":
 					{
-						"type": "STACK_HEALTH",
-						"val": 75,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
+						"val": 75
 					},
 					"damage":
 					{
-						"type": "CREATURE_DAMAGE",
-						"subtype": "creatureDamageBoth",
-						"val" : 75,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
+						"val" : 75
 					}
 				}
 			},
@@ -150,18 +123,11 @@
 				{
 					"health":
 					{
-						"type": "STACK_HEALTH",
-						"val": 100,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
+						"val": 100
 					},
 					"damage":
 					{
-						"type": "CREATURE_DAMAGE",
-						"subtype": "creatureDamageBoth",
-						"val" : 100,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
+						"val" : 100
 					}
 				}
 			}

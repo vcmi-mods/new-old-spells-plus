@@ -59,48 +59,34 @@
 				"targetModifier":
 				{
 					"smart": true
-				}
+				},
+				"effects":
+				{
+					"undead":
+					{
+						"type": "UNDEAD",
+						"duration": "N_TURNS"
+					},
+					"lifeDrain":
+					{
+						"type": "LIFE_DRAIN",
+						"val" : 20,
+						"duration": "N_TURNS"
+					}
+				}				
 			},
 			"none":
 			{
 				"description": "{Vampirism}\n\nFriendly unit becomes undead and heals itself for 20% of damage dealt to enemy.\n",
 	 
-				"cost": 24,
-				"effects":
-				{
-					"undead":
-					{
-						"type": "UNDEAD",
-						"duration": "N_TURNS"
-					},
-					"lifeDrain":
-					{
-						"type": "LIFE_DRAIN",
-						"val" : 20,
-						"duration": "N_TURNS"
-					}
-				}
+				"cost": 24
+
 			},
 			"basic":
 			{
 				"description": "{Basic Vampirism}\n\nFriendly unit becomes undead and heals itself for 20% of damage dealt to enemy.\n",
 	 
-				"cost": 19,
-	 
-				"effects":
-				{
-					"undead":
-					{
-						"type": "UNDEAD",
-						"duration": "N_TURNS"
-					},
-					"lifeDrain":
-					{
-						"type": "LIFE_DRAIN",
-						"val" : 20,
-						"duration": "N_TURNS"
-					}
-				}
+				"cost": 19
 			},
 			"advanced":
 			{
@@ -110,16 +96,9 @@
 	 
 				"effects":
 				{
-					"undead":
-					{
-						"type": "UNDEAD",
-						"duration": "N_TURNS"
-					},
 					"lifeDrain":
 					{
-						"type": "LIFE_DRAIN",
-						"val" : 25,
-						"duration": "N_TURNS"
+						"val" : 25
 					}
 				}
 			},
@@ -131,16 +110,9 @@
 	 
 				"effects":
 				{
-					"undead":
-					{
-						"type": "UNDEAD",
-						"duration": "N_TURNS"
-					},
 					"lifeDrain":
 					{
-						"type": "LIFE_DRAIN",
-						"val" : 30,
-						"duration": "N_TURNS"
+						"val" : 30
 					}
 				}
 			}

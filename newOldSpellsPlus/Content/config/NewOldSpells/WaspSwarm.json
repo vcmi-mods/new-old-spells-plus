@@ -10,7 +10,7 @@
 			"fire": false,
 			"water": false
 		},
-		"level": 2,
+		"level": 1,
 		"power": 10,
 		"defaultGainChance": 10, 
 		"gainChance":
@@ -68,46 +68,45 @@
 			{
 //				"aiValue": 5,
 				"range": "0",
+				"power": 10,
 				"targetModifier":
 				{
 					"smart": true
-				}
+				},
+				"battleEffects" : {
+					"directDamage" : {
+						"type":"core:damage"
+					},
+					"speed": {
+						"type" : "core:timed",
+						"cumulative" : false,
+						"bonus" : {
+							"reduceSpeed" : {
+								"type": "STACKS_SPEED",
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : [ "STACK_GETS_TURN", "N_TURNS" ],
+								"val": -25
+//								"duration" : "N_TURNS"
+							}
+						}
+					}
+				}	
 			},
 			"none":
 			{
 				"description": "{Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
 	 
 				"cost": 8,
-				"power": 10,
+				"power": 10
 	 
-				"effects":
-				{
-					"speed":
-					{
-						"type": "STACKS_SPEED",
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "STACK_GETS_TURN",
-						"val": -25
-					}
-				}
+
 			},
 			"basic":
 			{
 				"description": "{Basic Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
 	 
 				"cost": 6,
-				"power": 15,
-	 
-				"effects":
-				{
-					"speed":
-					{
-						"type": "STACKS_SPEED",
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "STACK_GETS_TURN",
-						"val": -25
-					}
-				}
+				"power": 15
 			},
 			"advanced":
 			{
@@ -115,17 +114,16 @@
 	 
 				"cost": 6,
 				"power": 15,
-	 
-				"effects":
-				{
-					"speed":
-					{
-						"type": "STACKS_SPEED",
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "STACK_GETS_TURN",
-						"val": -50
+				"battleEffects" : {
+					"speed": {
+						"type" : "core:timed",
+						"bonus" : {
+							"reduceSpeed" : {
+								"val": -50
+							}
+						}
 					}
-				}
+				}	
 			},
 			"expert":
 			{
@@ -133,17 +131,16 @@
 	 
 				"cost": 6,
 				"power": 15,
-	 
-				"effects":
-				{
-					"speed":
-					{
-						"type": "STACKS_SPEED",
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "STACK_GETS_TURN",
-						"val": -75
+				"battleEffects" : {
+					"speed": {
+						"type" : "core:timed",
+						"bonus" : {
+							"reduceSpeed" : {
+								"val": -75
+							}
+						}
 					}
-				}
+				}	
 			}
 		}
 	}

@@ -66,15 +66,7 @@
 				"targetModifier":
 				{
 					"smart": true
-				}
-			},
-			"none":
-			{
-				"description": "{Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
-	 
-				"cost": 25,
-				"power": 90,
-	 
+				},
 				"effects":
 				{
 					"melee" :
@@ -84,25 +76,24 @@
 						"val" : -33,
 						"duration" : "STACK_GETS_TURN"
 					}
-				}
+				}				
+			},
+			
+			"none":
+			{
+				"description": "{Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
+	 
+				"cost": 25,
+				"power": 90
+	 
+
 			},
 			"basic":
 			{
 				"description": "{Basic Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
 	 
 				"cost": 20,
-				"power": 75,
-	 
-				"effects":
-				{
-					"melee" :
-					{
-						"subtype" : "damageTypeAll",
-						"type" : "GENERAL_DAMAGE_REDUCTION",
-						"val" : -33,
-						"duration" : "STACK_GETS_TURN"
-					}
-				}
+				"power": 75
 			},
 			"advanced":
 			{
@@ -115,10 +106,7 @@
 				{
 					"melee" :
 					{
-						"subtype" : "damageTypeAll",
-						"type" : "GENERAL_DAMAGE_REDUCTION",
-						"val" : -67,
-						"duration" : "STACK_GETS_TURN"
+						"val" : -67
 					}
 				}
 			},
@@ -133,10 +121,7 @@
 				{
 					"melee" :
 					{
-						"subtype" : "damageTypeAll",
-						"type" : "GENERAL_DAMAGE_REDUCTION",
-						"val" : -100,
-						"duration" : "STACK_GETS_TURN"
+						"val" : -100
 					}
 				}
 			}
