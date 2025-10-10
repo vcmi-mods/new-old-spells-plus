@@ -1,107 +1,92 @@
 {
-	"vigour":
-	{
-		"type": "combat", 
-		"name": "Vigour",
-		"school":
-		{
-			"air": false,
-			"earth": false,
-			"fire": true,
-			"water": false
+	"vigour" : {
+		"type" : "combat",
+		"name" : "Vigour",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
 		},
-		"level": 4,
-		"power": 10,
-		
-		"defaultGainChance": 10, 
-		"gainChance":
-		{
-			"rampart": 15,
-			"necropolis": 5
+		"level" : 4,
+		"power" : 10,
+
+		"defaultGainChance" : 10,
+		"gainChance" : {
+			"rampart" : 15,
+			"necropolis" : 5
 		},
- 
-		"flags" : {"positive": true},
+
+		"flags" : {
+			"positive" : true
+		},
 
 		"targetCondition" : {
 			"allOf" : {},
-			"anyOf" : {},			
+			"anyOf" : {},
 			"noneOf" : {}
-	},		
-
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/vigourBook.bmp",
-			"iconScroll": "NewOldSpells/vigourScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/vigourScenario.bmp",
-			"iconEffect": "NewOldSpells/vigourEffect.bmp"
-		},
-		
-		"animation":
-		{
-			"affect":["NewOldSpells/vigourSpell.def"]
 		},
 
-		"sounds":
-		{
-			"cast": "NewOldSpells/sound.spell.reflexes.wav"
+		"graphics" : {
+			"iconBook" : "NewOldSpells/vigourBook",
+			"iconScroll" : "NewOldSpells/vigourScroll",
+			"iconScenarioBonus" : "NewOldSpells/vigourScenario",
+			"iconEffect" : "NewOldSpells/vigourEffect"
 		},
-		
-		"targetType": "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-				"power": 10,
-//				"aiValue": 15,
-				"range": "0",
-				"targetModifier":
-				{
-					"smart": true
+
+		"animation" : {
+			"affect" : [
+				"NewOldSpells/vigourSpell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.reflexes.wav"
+		},
+
+		"targetType" : "CREATURE",
+
+		"levels" : {
+			"base" : {
+				"power" : 10,
+				//				"aiValue": 15,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
 				},
-				"effects":
-				{
-					"attacks":
-					{
-						"type": "ADDITIONAL_ATTACK",
-						"val": 1,
-						"duration": [
+				"effects" : {
+					"attacks" : {
+						"type" : "ADDITIONAL_ATTACK",
+						"val" : 1,
+						"duration" : [
 							"UNTIL_ATTACK",
 							"N_TURNS"
 						]
 					}
-				}				
+				}
 			},
-			"none":
-			{
-				"description": "{Vigour}\n\nThe selected unit will strike twice next time it attacks in melee.",
-	 
-				"cost": 18
-	 
+			"none" : {
+				"description" : "{Vigour}\n\nThe selected unit will strike twice next time it attacks in melee.",
 
+				"cost" : 18
 			},
-			"basic":
-			{
-				"description": "{Basic Vigour}\n\nThe selected unit will strike twice next time it attacks in melee.",
-	 
-				"cost": 14
+			"basic" : {
+				"description" : "{Basic Vigour}\n\nThe selected unit will strike twice next time it attacks in melee.",
+
+				"cost" : 14
 			},
-			"advanced":
-			{
-				"description": "{Advanced Vigour}\n\nGives the selected unit ability to strike twice in melee.",
-	 
-				"cost": 14
-//				"range": "1",
-	 
+			"advanced" : {
+				"description" : "{Advanced Vigour}\n\nGives the selected unit ability to strike twice in melee.",
+
+				"cost" : 14
+				//				"range": "1",
 			},
-			"expert":
-			{
-				"description": "{Expert Vigour}\n\nGives all friendly units ability to strike twice in melee.",
-	 
-				"cost": 14,
-				"range": "X"
+			"expert" : {
+				"description" : "{Expert Vigour}\n\nGives all friendly units ability to strike twice in melee.",
+
+				"cost" : 14,
+				"range" : "X"
 			}
 		}
 	}
- 
 }

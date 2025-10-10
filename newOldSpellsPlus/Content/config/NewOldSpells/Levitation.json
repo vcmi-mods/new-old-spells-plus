@@ -1,127 +1,109 @@
 {
-	"levitation":
-	{
-		"type": "combat", 
-		"name": "Levitation",
-		"school":
-		{
-			"air": true,
-			"earth": false,
-			"fire": false,
-			"water": false
+	"levitation" : {
+		"type" : "combat",
+		"name" : "Levitation",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"level": 3,
-		"power": 10,
-		"defaultGainChance": 4, 
-		"gainChance":
-		{
-			"castle": 8,
-			"tower": 8,
+		"level" : 3,
+		"power" : 10,
+		"defaultGainChance" : 4,
+		"gainChance" : {
+			"castle" : 8,
+			"tower" : 8,
 			"conflux" : 8,
 			"stronghold" : 6,
 			"fortress" : 5
 		},
- 
-		"flags" : {"positive": true},
- 
-		"targetCondition" : {
-			"allOf" : {},
-			"anyOf" : {},			
-			"noneOf" : {}
-	},
- 
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/levitationBook.bmp",
-			"iconScroll": "NewOldSpells/levitationScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/levitationScenario.bmp",
-			"iconEffect": "NewOldSpells/levitationEffect.bmp"
-		},
-		
-		"animation":
-		{
-			"affect":["NewOldSpells/levitationSpell.def"]
+
+		"flags" : {
+			"positive" : true
 		},
 
-		"sounds":
-		{
-			"cast":"NewOldSpells/sound.spell.levitation.wav"
+		"targetCondition" : {
+			"allOf" : {},
+			"anyOf" : {},
+			"noneOf" : {}
+		},
+
+		"graphics" : {
+			"iconBook" : "NewOldSpells/levitationBook",
+			"iconScroll" : "NewOldSpells/levitationScroll",
+			"iconScenarioBonus" : "NewOldSpells/levitationScenario",
+			"iconEffect" : "NewOldSpells/levitationEffect"
+		},
+
+		"animation" : {
+			"affect" : [
+				"NewOldSpells/levitationSpell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.levitation.wav"
 		},
 		"targetType" : "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-				"power": 10,
-//				"aiValue": 12,
-				"range": "0",
-				"targetModifier":
-				{
-					"smart": true
+
+		"levels" : {
+			"base" : {
+				"power" : 10,
+				//				"aiValue": 12,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
 				}
 			},
-			"none":
-			{
-				"description": "{Levitation}\n\nMakes the selected unit able to fly until it attacks.\n",	 
-				"cost": 12,	 
-				"effects":
-				{
-					"fly":
-					{
-						"type": "FLYING",
-						"duration": [
+			"none" : {
+				"description" : "{Levitation}\n\nMakes the selected unit able to fly until it attacks.\n",
+				"cost" : 12,
+				"effects" : {
+					"fly" : {
+						"type" : "FLYING",
+						"duration" : [
 							"UNTIL_ATTACK",
 							"N_TURNS"
 						]
 					}
 				}
 			},
-			"basic":
-			{
-				"description": "{Basic Levitation}\n\nMakes the selected unit able to fly until it attacks.\n", 
-				"cost": 9,			
-				"effects":
-				{
-					"fly":
-					{
-						"type": "FLYING",
-						"duration": [
+			"basic" : {
+				"description" : "{Basic Levitation}\n\nMakes the selected unit able to fly until it attacks.\n",
+				"cost" : 9,
+				"effects" : {
+					"fly" : {
+						"type" : "FLYING",
+						"duration" : [
 							"UNTIL_ATTACK",
 							"N_TURNS"
 						]
 					}
 				}
 			},
-			"advanced":
-			{
-				"description": "{Advanced Levitation}\n\nMakes the selected unit able to fly.\n",
-				"cost": 9,
-//				"range": "1",
-				"effects":
-				{
-					"fly":
-					{
-						"type": "FLYING",
-						"duration": "N_TURNS"
+			"advanced" : {
+				"description" : "{Advanced Levitation}\n\nMakes the selected unit able to fly.\n",
+				"cost" : 9,
+				//				"range": "1",
+				"effects" : {
+					"fly" : {
+						"type" : "FLYING",
+						"duration" : "N_TURNS"
 					}
 				}
 			},
-			"expert":
-			{
-				"description": "{Expert Levitation}\n\nMakes all friendly units able to fly.\n",
-				"cost": 9,
-				"range": "X",
-				"effects":
-				{
-					"fly":
-					{
-						"type": "FLYING",
-						"duration": "N_TURNS"
+			"expert" : {
+				"description" : "{Expert Levitation}\n\nMakes all friendly units able to fly.\n",
+				"cost" : 9,
+				"range" : "X",
+				"effects" : {
+					"fly" : {
+						"type" : "FLYING",
+						"duration" : "N_TURNS"
 					}
 				}
 			}
 		}
 	}
- 
 }

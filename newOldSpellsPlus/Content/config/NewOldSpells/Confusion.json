@@ -1,140 +1,122 @@
 {
-	"confusion":
-	{
-		"type": "combat", 
-		"name": "Confusion",
-		"school":
-		{
-			"air": false,
-			"earth": false,
-			"fire": false,
-			"water": true
+	"confusion" : {
+		"type" : "combat",
+		"name" : "Confusion",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
 		},
-		"level": 3,
-		"power": 10,
-		"defaultGainChance": 4, 
-		"gainChance":
-		{
-			"castle": 8,
-			"rampart": 8,
+		"level" : 3,
+		"power" : 10,
+		"defaultGainChance" : 4,
+		"gainChance" : {
+			"castle" : 8,
+			"rampart" : 8,
 			"conflux" : 8
 		},
- 
-		"animation":
-		{
-			"affect":["NewOldSpells/confusionSpell.def"]
+
+		"animation" : {
+			"affect" : [
+				"NewOldSpells/confusionSpell.def"
+			]
 		},
- 
-		"flags" : {"negative": true},
+
+		"flags" : {
+			"negative" : true
+		},
 
 		"targetCondition" : {
 			"allOf" : {},
-			"anyOf" : {},			
+			"anyOf" : {},
 			"noneOf" : {
-				"core:bonus.MIND_IMMUNITY": "normal",
-				"core:bonus.NON_LIVING": "normal",
-				"core:bonus.UNDEAD": "normal",
-				"core:bonus.GARGOYLE": "normal",
-				"core:bonus.MECHANICAL": "normal"
+				"core:bonus.MIND_IMMUNITY" : "normal",
+				"core:bonus.NON_LIVING" : "normal",
+				"core:bonus.UNDEAD" : "normal",
+				"core:bonus.GARGOYLE" : "normal",
+				"core:bonus.MECHANICAL" : "normal"
 			}
-	}, 
-	
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/confusionBook.bmp",
-			"iconScroll": "NewOldSpells/confusionScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/confusionScenario.bmp",
-			"iconEffect": "NewOldSpells/confusionEffect.bmp",
-			"iconImmune": "NewOldSpells/confusionImmune.bmp"
 		},
 
-		"sounds":
-		{
-			"cast":"NewOldSpells/sound.spell.disintegrate.wav"
+		"graphics" : {
+			"iconBook" : "NewOldSpells/confusionBook",
+			"iconScroll" : "NewOldSpells/confusionScroll",
+			"iconScenarioBonus" : "NewOldSpells/confusionScenario",
+			"iconEffect" : "NewOldSpells/confusionEffect",
+			"iconImmune" : "NewOldSpells/confusionImmune"
+		},
+
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.disintegrate.wav"
 		},
 		"targetType" : "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-				"power": 10,
-//				"aiValue": 12,
-				"range": "0",
-				"targetModifier":
-				{
-					"smart": true
+
+		"levels" : {
+			"base" : {
+				"power" : 10,
+				//				"aiValue": 12,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
 				}
 			},
-			"none":
-			{
-				"description": "{Confusion}\n\nTarget enemy unit cannot retaliate once.\n",
-	 
-				"cost": 13,
-	 
-				"effects":
-				{
-					"confusion":
-					{
-						"type": "NO_RETALIATION",
-						"duration": [
+			"none" : {
+				"description" : "{Confusion}\n\nTarget enemy unit cannot retaliate once.\n",
+
+				"cost" : 13,
+
+				"effects" : {
+					"confusion" : {
+						"type" : "NO_RETALIATION",
+						"duration" : [
 							"UNTIL_BEING_ATTACKED",
 							"N_TURNS"
 						]
 					}
 				}
 			},
-			"basic":
-			{
-				"description": "{Basic Confusion}\n\nTarget enemy unit cannot retaliate once.\n",
-	 
-				"cost": 10,
-	 
-				"effects":
-				{
-					"confusion":
-					{
-						"type": "NO_RETALIATION",
-						"duration": [
+			"basic" : {
+				"description" : "{Basic Confusion}\n\nTarget enemy unit cannot retaliate once.\n",
+
+				"cost" : 10,
+
+				"effects" : {
+					"confusion" : {
+						"type" : "NO_RETALIATION",
+						"duration" : [
 							"UNTIL_BEING_ATTACKED",
 							"N_TURNS"
 						]
 					}
 				}
 			},
-			"advanced":
-			{
-				"description": "{Advanced Confusion}\n\nTarget enemy unit cannot retaliate.\n",
-	 
-				"cost": 10,
-//				"range": "1",
-	 
-				"effects":
-				{
-					"confusion":
-					{
-						"type": "NO_RETALIATION",
-						"duration": "N_TURNS"
+			"advanced" : {
+				"description" : "{Advanced Confusion}\n\nTarget enemy unit cannot retaliate.\n",
+
+				"cost" : 10,
+				//				"range": "1",
+
+				"effects" : {
+					"confusion" : {
+						"type" : "NO_RETALIATION",
+						"duration" : "N_TURNS"
 					}
 				}
 			},
-			"expert":
-			{
-				"description": "{Expert Confusion}\n\nAll enemy units cannot retaliate.\n",
-	 
-				"cost": 10,
-				"range": "X",
-	 
-				"effects":
-				{
-					"confusion":
-					{
-						"type": "NO_RETALIATION",
-						"duration": "N_TURNS"
+			"expert" : {
+				"description" : "{Expert Confusion}\n\nAll enemy units cannot retaliate.\n",
+
+				"cost" : 10,
+				"range" : "X",
+
+				"effects" : {
+					"confusion" : {
+						"type" : "NO_RETALIATION",
+						"duration" : "N_TURNS"
 					}
 				}
 			}
 		}
 	}
- 
 }

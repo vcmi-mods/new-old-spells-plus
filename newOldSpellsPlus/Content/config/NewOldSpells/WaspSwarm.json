@@ -1,148 +1,134 @@
 {
-	"waspSwarm":
-	{
-		"type": "combat", 
-		"name": "Wasp Swarm",
-		"school":
-		{
-			"air": false,
-			"earth": true,
-			"fire": false,
-			"water": false
+	"waspSwarm" : {
+		"type" : "combat",
+		"name" : "Wasp Swarm",
+		"school" : {
+			"air" : false,
+			"earth" : true,
+			"fire" : false,
+			"water" : false
 		},
-		"level": 1,
-		"power": 10,
-		"defaultGainChance": 10, 
-		"gainChance":
-		{
-			"rampart": 20,
-			"necropolis": 15,
+		"level" : 1,
+		"power" : 10,
+		"defaultGainChance" : 10,
+		"gainChance" : {
+			"rampart" : 20,
+			"necropolis" : 15,
 			"inferno" : 0,
 			"stronghold" : 15,
 			"fortress" : 20,
 			"conflux" : 0
 		},
- 
-		"flags" :
-		{
-			"damage": true,
-			"offensive": true,
-			"negative": true
+
+		"flags" : {
+			"damage" : true,
+			"negative" : true
 		},
- 
 
 		"targetCondition" : {
 			"allOf" : {},
-			"anyOf" : {},			
+			"anyOf" : {},
 			"noneOf" : {
-//				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal",
-				"core:bonus.NON_LIVING": "normal",
-				"core:bonus.UNDEAD": "normal",
-				"core:bonus.GARGOYLE": "normal",
-				"core:bonus.MECHANICAL": "normal"				
+				//				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal",
+				"core:bonus.NON_LIVING" : "normal",
+				"core:bonus.UNDEAD" : "normal",
+				"core:bonus.GARGOYLE" : "normal",
+				"core:bonus.MECHANICAL" : "normal"
 			}
-	},  
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/waspBook.bmp",
-			"iconScroll": "NewOldSpells/waspScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/waspScenario.bmp",
-			"iconEffect": "NewOldSpells/waspEffect.bmp",
-			"iconImmune": "NewOldSpells/waspImmune.bmp"
 		},
-		
-		"animation":
-		{
-			"hit":["NewOldSpells/waspSpell.def"]
+		"graphics" : {
+			"iconBook" : "NewOldSpells/waspBook",
+			"iconScroll" : "NewOldSpells/waspScroll",
+			"iconScenarioBonus" : "NewOldSpells/waspScenario",
+			"iconEffect" : "NewOldSpells/waspEffect",
+			"iconImmune" : "NewOldSpells/waspImmune"
 		},
 
-		"sounds":
-		{
-			"cast":"NewOldSpells/sound.spell.wasp.wav"
+		"animation" : {
+			"hit" : [
+				"NewOldSpells/waspSpell.def"
+			]
 		},
-		"targetType": "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-//				"aiValue": 5,
-				"range": "0",
-				"power": 10,
-				"targetModifier":
-				{
-					"smart": true
+
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.wasp.wav"
+		},
+		"targetType" : "CREATURE",
+
+		"levels" : {
+			"base" : {
+				//				"aiValue": 5,
+				"range" : "0",
+				"power" : 10,
+				"targetModifier" : {
+					"smart" : true
 				},
 				"battleEffects" : {
 					"directDamage" : {
-						"type":"core:damage"
+						"type" : "core:damage"
 					},
-					"speed": {
+					"speed" : {
 						"type" : "core:timed",
 						"cumulative" : false,
 						"bonus" : {
 							"reduceSpeed" : {
-								"type": "STACKS_SPEED",
+								"type" : "STACKS_SPEED",
 								"valueType" : "PERCENT_TO_ALL",
-								"duration" : [ "STACK_GETS_TURN", "N_TURNS" ],
-								"val": -25
-//								"duration" : "N_TURNS"
+								"duration" : [
+									"STACK_GETS_TURN",
+									"N_TURNS"
+								],
+								"val" : -25
+								//								"duration" : "N_TURNS"
 							}
 						}
 					}
-				}	
+				}
 			},
-			"none":
-			{
-				"description": "{Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
-	 
-				"cost": 8,
-				"power": 10
-	 
+			"none" : {
+				"description" : "{Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
 
+				"cost" : 8,
+				"power" : 10
 			},
-			"basic":
-			{
-				"description": "{Basic Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
-	 
-				"cost": 6,
-				"power": 15
+			"basic" : {
+				"description" : "{Basic Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+
+				"cost" : 6,
+				"power" : 15
 			},
-			"advanced":
-			{
-				"description": "{Advanced Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
-	 
-				"cost": 6,
-				"power": 15,
+			"advanced" : {
+				"description" : "{Advanced Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+
+				"cost" : 6,
+				"power" : 15,
 				"battleEffects" : {
-					"speed": {
+					"speed" : {
 						"type" : "core:timed",
 						"bonus" : {
 							"reduceSpeed" : {
-								"val": -50
+								"val" : -50
 							}
 						}
 					}
-				}	
+				}
 			},
-			"expert":
-			{
-				"description": "{Expert Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
-	 
-				"cost": 6,
-				"power": 15,
+			"expert" : {
+				"description" : "{Expert Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
+
+				"cost" : 6,
+				"power" : 15,
 				"battleEffects" : {
-					"speed": {
+					"speed" : {
 						"type" : "core:timed",
 						"bonus" : {
 							"reduceSpeed" : {
-								"val": -75
+								"val" : -75
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 	}
- 
 }
