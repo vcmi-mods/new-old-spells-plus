@@ -35,10 +35,10 @@
  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/dragonSBook.bmp",
-			"iconScroll": "NewOldSpells/dragonSScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/dragonSScenario.bmp",
-			"iconEffect": "NewOldSpells/dragonSEffect.bmp"
+			"iconBook": "NewOldSpells/dragonSBook",
+			"iconScroll": "NewOldSpells/dragonSScroll",
+			"iconScenarioBonus": "NewOldSpells/dragonSScenario",
+			"iconEffect": "NewOldSpells/dragonSEffect"
 		},
 		
 		"animation":

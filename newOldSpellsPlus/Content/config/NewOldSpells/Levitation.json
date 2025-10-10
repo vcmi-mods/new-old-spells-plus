@@ -32,10 +32,10 @@
  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/levitationBook.bmp",
-			"iconScroll": "NewOldSpells/levitationScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/levitationScenario.bmp",
-			"iconEffect": "NewOldSpells/levitationEffect.bmp"
+			"iconBook": "NewOldSpells/levitationBook",
+			"iconScroll": "NewOldSpells/levitationScroll",
+			"iconScenarioBonus": "NewOldSpells/levitationScenario",
+			"iconEffect": "NewOldSpells/levitationEffect"
 		},
 		
 		"animation":

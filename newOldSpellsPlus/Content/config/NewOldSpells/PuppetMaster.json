@@ -41,11 +41,11 @@
  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/puppetMBook.bmp",
-			"iconScroll": "NewOldSpells/puppetMScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/puppetMScenario.bmp",
-			"iconEffect": "NewOldSpells/puppetMEffect.bmp",
-			"iconImmune": "NewOldSpells/puppetMImmune.bmp"
+			"iconBook": "NewOldSpells/puppetMBook",
+			"iconScroll": "NewOldSpells/puppetMScroll",
+			"iconScenarioBonus": "NewOldSpells/puppetMScenario",
+			"iconEffect": "NewOldSpells/puppetMEffect",
+			"iconImmune": "NewOldSpells/puppetMImmune"
 		},
 
 		"sounds":

@@ -39,11 +39,11 @@
  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/dFreezeBook.bmp",
-			"iconScroll": "NewOldSpells/dFreezeScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/dFreezeScenario.bmp",
-			"iconEffect": "NewOldSpells/dFreezeEffect.bmp",
-			"iconImmune": "NewOldSpells/dFreezeImmune.bmp"
+			"iconBook": "NewOldSpells/dFreezeBook",
+			"iconScroll": "NewOldSpells/dFreezeScroll",
+			"iconScenarioBonus": "NewOldSpells/dFreezeScenario",
+			"iconEffect": "NewOldSpells/dFreezeEffect",
+			"iconImmune": "NewOldSpells/dFreezeImmune"
 		},
 		
 		"animation":

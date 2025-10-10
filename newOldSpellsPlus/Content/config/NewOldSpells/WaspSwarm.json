@@ -26,7 +26,6 @@
 		"flags" :
 		{
 			"damage": true,
-			"offensive": true,
 			"negative": true
 		},
  
@@ -44,11 +43,11 @@
 	},  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/waspBook.bmp",
-			"iconScroll": "NewOldSpells/waspScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/waspScenario.bmp",
-			"iconEffect": "NewOldSpells/waspEffect.bmp",
-			"iconImmune": "NewOldSpells/waspImmune.bmp"
+			"iconBook": "NewOldSpells/waspBook",
+			"iconScroll": "NewOldSpells/waspScroll",
+			"iconScenarioBonus": "NewOldSpells/waspScenario",
+			"iconEffect": "NewOldSpells/waspEffect",
+			"iconImmune": "NewOldSpells/waspImmune"
 		},
 		
 		"animation":

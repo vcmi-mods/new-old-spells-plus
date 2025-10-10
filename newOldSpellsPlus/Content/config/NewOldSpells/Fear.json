@@ -37,11 +37,11 @@
  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/fearBook.bmp",
-			"iconScroll": "NewOldSpells/fearScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/fearScenario.bmp",
-			"iconEffect": "NewOldSpells/fearEffect.bmp",
-			"iconImmune": "NewOldSpells/fearImmune.bmp"
+			"iconBook": "NewOldSpells/fearBook",
+			"iconScroll": "NewOldSpells/fearScroll",
+			"iconScenarioBonus": "NewOldSpells/fearScenario",
+			"iconEffect": "NewOldSpells/fearEffect",
+			"iconImmune": "NewOldSpells/fearImmune"
 		},
 		"sounds":
 		{

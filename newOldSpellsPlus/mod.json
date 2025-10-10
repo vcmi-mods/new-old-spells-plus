@@ -3,7 +3,7 @@
 	"description": "Expand your magical arsenal with 9 iconic spells inspired by other Heroes of Might and Magic games.<br/><br/>This modification adds:<br/><br/>Confusion<br/>Deep Freeze<br/>Dragon Strength<br/>Fear<br/>Levitation<br/>Puppet Master<br/>Vampirism<br/>Vigour<br/>Wasp Swarm",
 	"author" : "Warmonger, Andruids",
 	"contact" : "http://forum.vcmi.eu/viewforum.php?f=15",
-	"version" : "1.0.7",
+	"version" : "1.0.8",
 	"modType" : "Spells",	
 	"compatibility" :
 	{
@@ -17,7 +17,7 @@
 		"config/NewOldSpells/Fear.json",
 		"config/NewOldSpells/Levitation.json",
 		"config/NewOldSpells/PuppetMaster.json",
-//		"config/NewOldSpells/Vampirism.json", //almost duplicate with tides-of-war wampirism
+		"config/NewOldSpells/Vampirism.json", // Tides of War delivers almost same spell, when using together with ToW, only ToW ones is available in spellbook
 		"config/NewOldSpells/Vigour.json",
 		"config/NewOldSpells/WaspSwarm.json"
 	],
@@ -37,7 +37,8 @@
 		"1.0.4" : [ "Improved description" ],
 		"1.0.5" : [ "Fear spell fix by kdmcser" ],
 		"1.0.6" : [ "Update to vcmi-1.7 format" ],
-		"1.0.7" : [ "Another update to vcmi-1.7 format" ]
+		"1.0.7" : [ "Another update to vcmi-1.7 format" ],
+		"1.0.8" : [ "Vampirism is back, when used with ToW, only ToW one is available in spellbook", "Converted BMPs to PNGs" ]
     },
     "chinese" : {
 		"name": "旧新法术",

@@ -37,10 +37,10 @@
  
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/vampirismBook.bmp",
-			"iconScroll": "NewOldSpells/vampirismScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/vampirismScenario.bmp",
-			"iconEffect": "NewOldSpells/vampirismEffect.bmp"
+			"iconBook": "NewOldSpells/vampirismBook",
+			"iconScroll": "NewOldSpells/vampirismScroll",
+			"iconScenarioBonus": "NewOldSpells/vampirismScenario",
+			"iconEffect": "NewOldSpells/vampirismEffect"
 		},
 
 		"sounds":

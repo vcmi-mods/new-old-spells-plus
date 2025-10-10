@@ -30,10 +30,10 @@
 
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/vigourBook.bmp",
-			"iconScroll": "NewOldSpells/vigourScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/vigourScenario.bmp",
-			"iconEffect": "NewOldSpells/vigourEffect.bmp"
+			"iconBook": "NewOldSpells/vigourBook",
+			"iconScroll": "NewOldSpells/vigourScroll",
+			"iconScenarioBonus": "NewOldSpells/vigourScenario",
+			"iconEffect": "NewOldSpells/vigourEffect"
 		},
 		
 		"animation":

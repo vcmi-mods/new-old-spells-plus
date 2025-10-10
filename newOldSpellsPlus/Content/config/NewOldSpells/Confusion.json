@@ -41,11 +41,11 @@
 	
 		"graphics":
 		{
-			"iconBook": "NewOldSpells/confusionBook.bmp",
-			"iconScroll": "NewOldSpells/confusionScroll.bmp",
-			"iconScenarioBonus": "NewOldSpells/confusionScenario.bmp",
-			"iconEffect": "NewOldSpells/confusionEffect.bmp",
-			"iconImmune": "NewOldSpells/confusionImmune.bmp"
+			"iconBook": "NewOldSpells/confusionBook",
+			"iconScroll": "NewOldSpells/confusionScroll",
+			"iconScenarioBonus": "NewOldSpells/confusionScenario",
+			"iconEffect": "NewOldSpells/confusionEffect",
+			"iconImmune": "NewOldSpells/confusionImmune"
 		},
 
 		"sounds":
