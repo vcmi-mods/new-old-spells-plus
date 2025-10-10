@@ -1,153 +1,134 @@
 {
-	"puppetMaster":
-	{
-		"type": "combat", 
-		"name": "Puppet Master",
-		"school":
-		{
-			"air": true,
-			"earth": false,
-			"fire": false,
-			"water": false
+	"puppetMaster" : {
+		"type" : "combat",
+		"name" : "Puppet Master",
+		"school" : {
+			"air" : true,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"level": 5,
-		"power": 10,
-		"defaultGainChance": 12, 
-		"gainChance":
-		{
-			"tower": 20,
-			"necropolis": 16,
+		"level" : 5,
+		"power" : 10,
+		"defaultGainChance" : 12,
+		"gainChance" : {
+			"tower" : 20,
+			"necropolis" : 16,
 			"inferno" : 16,
 			"conflux" : 0
 		},
- 
-		"animation":{
-			"affect":["C10SPA0"]
+
+		"animation" : {
+			"affect" : [
+				"C10SPA0"
+			]
 		},
- 
-		"flags" : {"negative": true},
- 
+
+		"flags" : {
+			"negative" : true
+		},
+
 		"targetCondition" : {
 			"allOf" : {},
-			"anyOf" : {},			
+			"anyOf" : {},
 			"noneOf" : {
-				"core:bonus.MIND_IMMUNITY": "normal",
-				"core:bonus.NON_LIVING": "normal",
-				"core:bonus.UNDEAD": "normal",
-				"core:bonus.GARGOYLE": "normal",
-				"core:bonus.MECHANICAL": "normal"				
+				"core:bonus.MIND_IMMUNITY" : "normal",
+				"core:bonus.NON_LIVING" : "normal",
+				"core:bonus.UNDEAD" : "normal",
+				"core:bonus.GARGOYLE" : "normal",
+				"core:bonus.MECHANICAL" : "normal"
 			}
-	},	
- 
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/puppetMBook",
-			"iconScroll": "NewOldSpells/puppetMScroll",
-			"iconScenarioBonus": "NewOldSpells/puppetMScenario",
-			"iconEffect": "NewOldSpells/puppetMEffect",
-			"iconImmune": "NewOldSpells/puppetMImmune"
 		},
 
-		"sounds":
-		{
-			"cast":"NewOldSpells/sound.spell.puppet master.wav"
+		"graphics" : {
+			"iconBook" : "NewOldSpells/puppetMBook",
+			"iconScroll" : "NewOldSpells/puppetMScroll",
+			"iconScenarioBonus" : "NewOldSpells/puppetMScenario",
+			"iconEffect" : "NewOldSpells/puppetMEffect",
+			"iconImmune" : "NewOldSpells/puppetMImmune"
 		},
-		"targetType": "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-				"power": 10,
-//				"aiValue": 20,
-				"range": "0",
-				"targetModifier":
-				{
-					"smart": true
-				}
-			},
-			"none":
-			{
-				"description": "{Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slowed down.\n",
-	 
-				"cost": 30,
-	 
-				"effects":
-				{
-					"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": [
-							"UNTIL_BEING_ATTACKED",
-							"N_TURNS"
-						]
-					},
-					"speed":
-					{
-						"type": "STACKS_SPEED",
-						"valueType" : "PERCENT_TO_ALL",
-						"val": -50
-					}
-				}
-			},
-			"basic":
-			{
-				"description": "{Basic Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slowed down.\n",				
-				"cost": 25,
 
-				"effects":
-				{
-					"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": [
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.puppet master.wav"
+		},
+		"targetType" : "CREATURE",
+
+		"levels" : {
+			"base" : {
+				"power" : 10,
+				//				"aiValue": 20,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
+				}
+			},
+			"none" : {
+				"description" : "{Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slowed down.\n",
+
+				"cost" : 30,
+
+				"effects" : {
+					"undead" : {
+						"type" : "HYPNOTIZED",
+						"duration" : [
 							"UNTIL_BEING_ATTACKED",
 							"N_TURNS"
 						]
 					},
-					"speed":
-					{
-						"type": "STACKS_SPEED",
+					"speed" : {
+						"type" : "STACKS_SPEED",
 						"valueType" : "PERCENT_TO_ALL",
-						"val": -50
+						"val" : -50
 					}
 				}
 			},
-			"advanced":
-			{
-				"description": "{Advanced Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slightly slowed down.\n",
-	 
-				"cost": 25,
-	 
-				"effects":
-				{
-					"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": [
+			"basic" : {
+				"description" : "{Basic Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slowed down.\n",
+				"cost" : 25,
+
+				"effects" : {
+					"undead" : {
+						"type" : "HYPNOTIZED",
+						"duration" : [
 							"UNTIL_BEING_ATTACKED",
 							"N_TURNS"
 						]
 					},
-					"speed":
-					{
-						"type": "STACKS_SPEED",
+					"speed" : {
+						"type" : "STACKS_SPEED",
 						"valueType" : "PERCENT_TO_ALL",
-						"val": -25
+						"val" : -50
 					}
 				}
 			},
-			"expert":
-			{
-				"description": "{Expert Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage.\n",
-	 
-				"cost": 25,
-				"effects":
-				{
-					"undead":
-					{
-						"type": "HYPNOTIZED",
-						"duration": [
+			"advanced" : {
+				"description" : "{Advanced Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage. The affected unit is slightly slowed down.\n",
+
+				"cost" : 25,
+
+				"effects" : {
+					"undead" : {
+						"type" : "HYPNOTIZED",
+						"duration" : [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS"
+						]
+					},
+					"speed" : {
+						"type" : "STACKS_SPEED",
+						"valueType" : "PERCENT_TO_ALL",
+						"val" : -25
+					}
+				}
+			},
+			"expert" : {
+				"description" : "{Expert Puppet Master}\n\nPuts an enemy unit temporarily under your control until the unit takes damage.\n",
+
+				"cost" : 25,
+				"effects" : {
+					"undead" : {
+						"type" : "HYPNOTIZED",
+						"duration" : [
 							"UNTIL_BEING_ATTACKED",
 							"N_TURNS"
 						]
@@ -156,5 +137,4 @@
 			}
 		}
 	}
- 
 }

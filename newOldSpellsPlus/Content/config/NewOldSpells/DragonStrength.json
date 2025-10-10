@@ -1,132 +1,114 @@
 {
-	"dragonStrength":
-	{
-		"type": "combat", 
-		"name": "Dragon Strength",
-		"school":
-		{
-			"air": false,
-			"earth": false,
-			"fire": true,
-			"water": false
+	"dragonStrength" : {
+		"type" : "combat",
+		"name" : "Dragon Strength",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : true,
+			"water" : false
 		},
-		"level": 5,
-		"power": 10,
-		"defaultGainChance": 5, 
-		"gainChance":
-		{
-			"rampart": 20,
+		"level" : 5,
+		"power" : 10,
+		"defaultGainChance" : 5,
+		"gainChance" : {
+			"rampart" : 20,
 			"dungeon" : 15,
-			"tower": 10,
-			"inferno": 5,
-			"necropolis": 0,
-			"conflux": 0
+			"tower" : 10,
+			"inferno" : 5,
+			"necropolis" : 0,
+			"conflux" : 0
 		},
- 
-		"flags" : {"positive": true},
+
+		"flags" : {
+			"positive" : true
+		},
 
 		"targetCondition" : {
 			"allOf" : {},
-			"anyOf" : {},			
+			"anyOf" : {},
 			"noneOf" : {
-				"core:bonus.DRAGON_NATURE": "normal"
+				"core:bonus.DRAGON_NATURE" : "normal"
 			}
-	},
- 
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/dragonSBook",
-			"iconScroll": "NewOldSpells/dragonSScroll",
-			"iconScenarioBonus": "NewOldSpells/dragonSScenario",
-			"iconEffect": "NewOldSpells/dragonSEffect"
-		},
-		
-		"animation":
-		{
-			"affect":["NewOldSpells/dragonSSpell.def"]
 		},
 
-		"sounds":
-		{
-			"cast": "NewOldSpells/sound.spell.dragon strength.wav"
+		"graphics" : {
+			"iconBook" : "NewOldSpells/dragonSBook",
+			"iconScroll" : "NewOldSpells/dragonSScroll",
+			"iconScenarioBonus" : "NewOldSpells/dragonSScenario",
+			"iconEffect" : "NewOldSpells/dragonSEffect"
 		},
-		
-		"targetType": "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-				"power": 10,
-//				"aiValue": 20,
-				"range": "0",
-				"targetModifier":
-				{
-					"smart": true
+
+		"animation" : {
+			"affect" : [
+				"NewOldSpells/dragonSSpell.def"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.dragon strength.wav"
+		},
+
+		"targetType" : "CREATURE",
+
+		"levels" : {
+			"base" : {
+				"power" : 10,
+				//				"aiValue": 20,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
 				},
-				"effects":
-				{
-					"health":
-					{
-						"type": "STACK_HEALTH",
-						"val": 50,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
-					},
-					"damage":
-					{
-						"type": "CREATURE_DAMAGE",
-						"subtype": "creatureDamageBoth",
+				"effects" : {
+					"health" : {
+						"type" : "STACK_HEALTH",
 						"val" : 50,
-						"valueType": "PERCENT_TO_ALL",
-						"duration": "N_TURNS"
-					}
-				}				
-			},
-			"none":
-			{
-				"description": "{Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
-	 
-				"cost": 30
-			},
-			"basic":
-			{
-				"description": "{Basic Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
-	 
-				"cost": 25,
-			},
-			"advanced":
-			{
-				"description": "{Advanced Dragon Strength}\n\nIncreases health and damage of a friendly unit by 75%. Does not affect Dragons.\n",
-	 
-				"cost": 25,
-	 
-				"effects":
-				{
-					"health":
-					{
-						"val": 75
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
 					},
-					"damage":
-					{
+					"damage" : {
+						"type" : "CREATURE_DAMAGE",
+						"subtype" : "creatureDamageBoth",
+						"val" : 50,
+						"valueType" : "PERCENT_TO_ALL",
+						"duration" : "N_TURNS"
+					}
+				}
+			},
+			"none" : {
+				"description" : "{Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
+
+				"cost" : 30
+			},
+			"basic" : {
+				"description" : "{Basic Dragon Strength}\n\nIncreases health and damage of a friendly unit by 50%. Does not affect Dragons.\n",
+
+				"cost" : 25
+			},
+			"advanced" : {
+				"description" : "{Advanced Dragon Strength}\n\nIncreases health and damage of a friendly unit by 75%. Does not affect Dragons.\n",
+
+				"cost" : 25,
+
+				"effects" : {
+					"health" : {
+						"val" : 75
+					},
+					"damage" : {
 						"val" : 75
 					}
 				}
 			},
-			"expert":
-			{
-				"description": "{Expert Dragon Strength}\n\nDoubles health and damage of a friendly unit. Does not affect Dragons.\n",
-	 
-				"cost": 25,
-	 
-				"effects":
-				{
-					"health":
-					{
-						"val": 100
+			"expert" : {
+				"description" : "{Expert Dragon Strength}\n\nDoubles health and damage of a friendly unit. Does not affect Dragons.\n",
+
+				"cost" : 25,
+
+				"effects" : {
+					"health" : {
+						"val" : 100
 					},
-					"damage":
-					{
+					"damage" : {
 						"val" : 100
 					}
 				}

@@ -1,131 +1,109 @@
 {
-	"deepFreeze":
-	{
-		"type": "combat", 
-		"name": "Deep Freeze",
-		"school":
-		{
-			"air": false,
-			"earth": false,
-			"fire": false,
-			"water": true
+	"deepFreeze" : {
+		"type" : "combat",
+		"name" : "Deep Freeze",
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : true
 		},
-		"level": 5,
-		"power": 30,
-		"defaultGainChance": 10, 
-		"gainChance":
-		{
-			"rampart": 5,
-			"tower": 15,
-			"necropolis": 15,
+		"level" : 5,
+		"power" : 30,
+		"defaultGainChance" : 10,
+		"gainChance" : {
+			"rampart" : 5,
+			"tower" : 15,
+			"necropolis" : 15,
 			"inferno" : 0,
 			"conflux" : 15
 		},
- 
-		"flags" :
-		{
-			"damage": true,
-			"offensive": true,
-			"negative": true
+
+		"flags" : {
+			"damage" : true,
+			"offensive" : true,
+			"negative" : true
 		},
 		"targetCondition" : {
 			"allOf" : {},
-			"anyOf" : {},			
+			"anyOf" : {},
 			"noneOf" : {
-//				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal"
-
+				//				"core:bonus.DIRECT_DAMAGE_IMMUNITY": "normal"
 			}
-	}, 
- 
-		"graphics":
-		{
-			"iconBook": "NewOldSpells/dFreezeBook",
-			"iconScroll": "NewOldSpells/dFreezeScroll",
-			"iconScenarioBonus": "NewOldSpells/dFreezeScenario",
-			"iconEffect": "NewOldSpells/dFreezeEffect",
-			"iconImmune": "NewOldSpells/dFreezeImmune"
-		},
-		
-		"animation":
-		{
-			"affect":["NewOldSpells/dFreezeSpell"]
 		},
 
-		"sounds":
-		{
-			"cast":"NewOldSpells/sound.spell.freeze.wav"
+		"graphics" : {
+			"iconBook" : "NewOldSpells/dFreezeBook",
+			"iconScroll" : "NewOldSpells/dFreezeScroll",
+			"iconScenarioBonus" : "NewOldSpells/dFreezeScenario",
+			"iconEffect" : "NewOldSpells/dFreezeEffect",
+			"iconImmune" : "NewOldSpells/dFreezeImmune"
 		},
-		"targetType": "CREATURE",
- 
-		"levels":
-		{
-			"base":
-			{
-//				"aiValue": 15,
-				"range": "0",
-				"targetModifier":
-				{
-					"smart": true
+
+		"animation" : {
+			"affect" : [
+				"NewOldSpells/dFreezeSpell"
+			]
+		},
+
+		"sounds" : {
+			"cast" : "NewOldSpells/sound.spell.freeze.wav"
+		},
+		"targetType" : "CREATURE",
+
+		"levels" : {
+			"base" : {
+				//				"aiValue": 15,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : true
 				},
-				"effects":
-				{
-					"melee" :
-					{
+				"effects" : {
+					"melee" : {
 						"subtype" : "damageTypeAll",
 						"type" : "GENERAL_DAMAGE_REDUCTION",
 						"val" : -33,
 						"duration" : "STACK_GETS_TURN"
 					}
-				}				
+				}
 			},
-			
-			"none":
-			{
-				"description": "{Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
-	 
-				"cost": 25,
-				"power": 90
-	 
 
+			"none" : {
+				"description" : "{Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
+
+				"cost" : 25,
+				"power" : 90
 			},
-			"basic":
-			{
-				"description": "{Basic Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
-	 
-				"cost": 20,
-				"power": 75
+			"basic" : {
+				"description" : "{Basic Deep Freeze}\n\nFreezes target which takes 33% more physical damage until it gets turn.\n",
+
+				"cost" : 20,
+				"power" : 75
 			},
-			"advanced":
-			{
-				"description": "{Advanced Deep Freeze}\n\nFreezes target which takes 67% more physical damage until it gets turn.\n",
-	 
-				"cost": 20,
-				"power": 150,
-	 
-				"effects":
-				{
-					"melee" :
-					{
+			"advanced" : {
+				"description" : "{Advanced Deep Freeze}\n\nFreezes target which takes 67% more physical damage until it gets turn.\n",
+
+				"cost" : 20,
+				"power" : 150,
+
+				"effects" : {
+					"melee" : {
 						"val" : -67
 					}
 				}
 			},
-			"expert":
-			{
-				"description": "{Expert Deep Freeze}\n\nFreezes target which takes 100% more physical damage until it gets turn.\n",
-	 
-				"cost": 20,
-				"power": 300,
-	 
-				"effects":
-				{
-					"melee" :
-					{
+			"expert" : {
+				"description" : "{Expert Deep Freeze}\n\nFreezes target which takes 100% more physical damage until it gets turn.\n",
+
+				"cost" : 20,
+				"power" : 300,
+
+				"effects" : {
+					"melee" : {
 						"val" : -100
 					}
 				}
 			}
 		}
 	}
- 
 }
