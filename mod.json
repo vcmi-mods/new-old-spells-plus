@@ -74,35 +74,35 @@
 		"name" : "旧新法术",
 		"description" : "扩展你的魔法库，新增9个灵感来自《英雄无敌》其他版本的标志性法术。<br/><br/>本模组新增以下法术：<br/><br/>混乱<br/>深度冻结<br/>龙之力量<br/>恐惧<br/>漂浮<br/>傀儡大师<br/>群体吸血鬼化<br/>活力迸发<br/>蜂群滋扰",
 		"translations" : [
-			"config/NewOldSpells/translation/chinese.json"
+			"translation/chinese.json"
 		]
 	},
 	"german" : {
 		"name" : "Neue, alte Zauber",
 		"description" : "neun Zauber aus anderen HoMM-Spielen",
 		"translations" : [
-			"config/NewOldSpells/translation/german.json"
+			"translation/german.json"
 		]
 	},
 	"polish" : {
 		"name" : "Nowe-stare zaklęcia",
 		"description" : "Kilka nowych zaklęć przeniesionych z innych części Heroes of Might and Magic",
 		"translations" : [
-			"config/NewOldSpells/translation/polish.json"
+			"translation/polish.json"
 		]
 	},
 	"czech" : {
 		"name" : "Staronová kouzla",
 		"description" : "Rozšiřte svůj magický arzenál o 9 ikonických kouzel inspirovaných ostatními díly série Heroes of Might and Magic.<br/><br/>Tato modifikace přidává:<br/><br/>Zmatení<br/>Hluboké zmrazení<br/>Dračí síla<br/>Strach<br/>Levitace<br/>Loutkař<br/>Vampírismus<br/>Ráznost<br/>Včelí roj",
 		"translations" : [
-			"config/NewOldSpells/translation/czech.json"
+			"translation/czech.json"
 		]
 	},
 	"russian" : {
 		"name" : "Новые старые заклинания",
 		"description" : "Девять новых заклинаний, перенесенных из других частей Heroes of Might and Magic",
 		"translations" : [
-			"config/NewOldSpells/translation/russian.json"
+			"translation/russian.json"
 		]
 	}
 }
