@@ -43,5 +43,7 @@
 	"spell.new-old-spells-plus.waspSwarm.description.basic" : "{Basic Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
 	"spell.new-old-spells-plus.waspSwarm.description.expert" : "{Expert Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
 	"spell.new-old-spells-plus.waspSwarm.description.none" : "{Wasp Swarm}\n\nDoes little damage to target and reduces its speed for this turn.\n",
-	"spell.new-old-spells-plus.waspSwarm.name" : "Wasp Swarm"
+	"spell.new-old-spells-plus.waspSwarm.name" : "Wasp Swarm",
+	"mod.name" : "Old New Spells",
+	"mod.description" : "Expand your magical arsenal with 9 iconic spells inspired by other Heroes of Might and Magic games.<br/><br/>This modification adds:<br/><br/>Confusion<br/>Deep Freeze<br/>Dragon Strength<br/>Fear<br/>Levitation<br/>Puppet Master<br/>Vampirism<br/>Vigour<br/>Wasp Swarm"
 }
