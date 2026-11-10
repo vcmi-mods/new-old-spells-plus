@@ -54,14 +54,19 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"attacks" : {
-						"type" : "ADDITIONAL_ATTACK",
-						"val" : 1,
-						"duration" : [
-							"UNTIL_ATTACK",
-							"N_TURNS"
-						]
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"attacks" : {
+								"type" : "ADDITIONAL_ATTACK",
+								"val" : 1,
+								"duration" : [
+									"UNTIL_ATTACK",
+									"N_TURNS"
+								]
+							}
+						}
 					}
 				}
 			},

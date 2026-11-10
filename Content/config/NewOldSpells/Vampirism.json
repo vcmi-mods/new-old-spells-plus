@@ -56,15 +56,21 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"undead" : {
-						"type" : "UNDEAD",
-						"duration" : "N_TURNS"
-					},
-					"lifeDrain" : {
-						"type" : "LIFE_DRAIN",
-						"val" : 20,
-						"duration" : "N_TURNS"
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"undead" : {
+								"type" : "UNDEAD",
+								"duration" : "N_TURNS"
+							},
+							"lifeDrain" : {
+								"type" : "COMBAT_EVENT_TRIGGER",
+								"subtype" : "lifeDrain",
+								"val" : 20,
+								"duration" : "N_TURNS"
+							}
+						}
 					}
 				}
 			},
@@ -83,9 +89,14 @@
 
 				"cost" : 19,
 
-				"effects" : {
-					"lifeDrain" : {
-						"val" : 25
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"lifeDrain" : {
+								"val" : 25
+							}
+						}
 					}
 				}
 			},
@@ -94,9 +105,14 @@
 
 				"cost" : 19,
 
-				"effects" : {
-					"lifeDrain" : {
-						"val" : 30
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"lifeDrain" : {
+								"val" : 30
+							}
+						}
 					}
 				}
 			}
