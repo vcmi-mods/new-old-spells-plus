@@ -21,7 +21,6 @@
 
 		"flags" : {
 			"damage" : true,
-			"offensive" : true,
 			"negative" : true
 		},
 		"targetCondition" : {
@@ -58,12 +57,20 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"melee" : {
-						"subtype" : "damageTypeAll",
-						"type" : "GENERAL_DAMAGE_REDUCTION",
-						"val" : -33,
-						"duration" : "STACK_GETS_TURN"
+				"battleEffects" : {
+					"directDamage" : {
+						"type" : "core:damage"
+					},
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"melee" : {
+								"subtype" : "damageTypeAll",
+								"type" : "GENERAL_DAMAGE_REDUCTION",
+								"val" : -33,
+								"duration" : "STACK_GETS_TURN"
+							}
+						}
 					}
 				}
 			},
@@ -86,9 +93,14 @@
 				"cost" : 20,
 				"power" : 150,
 
-				"effects" : {
-					"melee" : {
-						"val" : -67
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"melee" : {
+								"val" : -67
+							}
+						}
 					}
 				}
 			},
@@ -98,9 +110,14 @@
 				"cost" : 20,
 				"power" : 300,
 
-				"effects" : {
-					"melee" : {
-						"val" : -100
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"melee" : {
+								"val" : -100
+							}
+						}
 					}
 				}
 			}

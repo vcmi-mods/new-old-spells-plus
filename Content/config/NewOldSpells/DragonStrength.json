@@ -59,19 +59,24 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"health" : {
-						"type" : "STACK_HEALTH",
-						"val" : 50,
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "N_TURNS"
-					},
-					"damage" : {
-						"type" : "CREATURE_DAMAGE",
-						"subtype" : "creatureDamageBoth",
-						"val" : 50,
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "N_TURNS"
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"health" : {
+								"type" : "STACK_HEALTH",
+								"val" : 50,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "N_TURNS"
+							},
+							"damage" : {
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageBoth",
+								"val" : 50,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "N_TURNS"
+							}
+						}
 					}
 				}
 			},
@@ -90,12 +95,17 @@
 
 				"cost" : 25,
 
-				"effects" : {
-					"health" : {
-						"val" : 75
-					},
-					"damage" : {
-						"val" : 75
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"health" : {
+								"val" : 75
+							},
+							"damage" : {
+								"val" : 75
+							}
+						}
 					}
 				}
 			},
@@ -104,12 +114,17 @@
 
 				"cost" : 25,
 
-				"effects" : {
-					"health" : {
-						"val" : 100
-					},
-					"damage" : {
-						"val" : 100
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"health" : {
+								"val" : 100
+							},
+							"damage" : {
+								"val" : 100
+							}
+						}
 					}
 				}
 			}

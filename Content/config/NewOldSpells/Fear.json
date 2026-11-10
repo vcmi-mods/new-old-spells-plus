@@ -55,25 +55,30 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"reduceDamage" : {
-						"type" : "CREATURE_DAMAGE",
-						"subtype" : "creatureDamageBoth",
-						"val" : -100,
-						"valueType" : "PERCENT_TO_ALL",
-						"duration" : "N_TURNS"
-					},
-					"reduceSpeed" : {
-						"type" : "STACKS_SPEED",
-						"val" : -25,
-						"valueType" : "PERCENT_TO_BASE",
-						"duration" : "N_TURNS"
-					},
-					"noAttack" : {
-						"type" : "ADDITIONAL_ATTACK",
-						"val" : -1,
-						"valueType" : "INDEPENDENT_MIN",
-						"duration" : "N_TURNS"
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"reduceDamage" : {
+								"type" : "CREATURE_DAMAGE",
+								"subtype" : "creatureDamageBoth",
+								"val" : -100,
+								"valueType" : "PERCENT_TO_ALL",
+								"duration" : "N_TURNS"
+							},
+							"reduceSpeed" : {
+								"type" : "STACKS_SPEED",
+								"val" : -25,
+								"valueType" : "PERCENT_TO_BASE",
+								"duration" : "N_TURNS"
+							},
+							"noAttack" : {
+								"type" : "ADDITIONAL_ATTACK",
+								"val" : -1,
+								"valueType" : "INDEPENDENT_MIN",
+								"duration" : "N_TURNS"
+							}
+						}
 					}
 				}
 			},
@@ -88,9 +93,14 @@
 			"advanced" : {
 				"description" : "{Advanced Fear}\n\nStrikes an enemy unit with such fear, that it becomes unable to attack and nearly unable to move.\n\nPenalty to movement is twice that of Basic Fear (-50% speed).\n",
 				"cost" : 30,
-				"effects" : {
-					"reduceSpeed" : {
-						"val" : -50
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"reduceSpeed" : {
+								"val" : -50
+							}
+						}
 					}
 				}
 			},
@@ -98,9 +108,14 @@
 				"description" : "{Expert Fear}\n\nStrikes an enemy unit with such fear, that it becomes unable to attack and nearly unable to move.\n\nPenalty to movement is three times that of Basic Fear (-75% speed).\n",
 				"cost" : 30,
 
-				"effects" : {
-					"reduceSpeed" : {
-						"val" : -75
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"reduceSpeed" : {
+								"val" : -75
+							}
+						}
 					}
 				}
 			}

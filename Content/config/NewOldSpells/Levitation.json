@@ -59,26 +59,36 @@
 			"none" : {
 				"description" : "{Levitation}\n\nMakes the selected unit able to fly until it attacks.\n",
 				"cost" : 12,
-				"effects" : {
-					"fly" : {
-						"type" : "FLYING",
-						"duration" : [
-							"UNTIL_ATTACK",
-							"N_TURNS"
-						]
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"fly" : {
+								"type" : "FLYING",
+								"duration" : [
+									"UNTIL_ATTACK",
+									"N_TURNS"
+								]
+							}
+						}
 					}
 				}
 			},
 			"basic" : {
 				"description" : "{Basic Levitation}\n\nMakes the selected unit able to fly until it attacks.\n",
 				"cost" : 9,
-				"effects" : {
-					"fly" : {
-						"type" : "FLYING",
-						"duration" : [
-							"UNTIL_ATTACK",
-							"N_TURNS"
-						]
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"fly" : {
+								"type" : "FLYING",
+								"duration" : [
+									"UNTIL_ATTACK",
+									"N_TURNS"
+								]
+							}
+						}
 					}
 				}
 			},
@@ -86,10 +96,15 @@
 				"description" : "{Advanced Levitation}\n\nMakes the selected unit able to fly.\n",
 				"cost" : 9,
 				//				"range": "1",
-				"effects" : {
-					"fly" : {
-						"type" : "FLYING",
-						"duration" : "N_TURNS"
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"fly" : {
+								"type" : "FLYING",
+								"duration" : "N_TURNS"
+							}
+						}
 					}
 				}
 			},
@@ -97,10 +112,15 @@
 				"description" : "{Expert Levitation}\n\nMakes all friendly units able to fly.\n",
 				"cost" : 9,
 				"range" : "X",
-				"effects" : {
-					"fly" : {
-						"type" : "FLYING",
-						"duration" : "N_TURNS"
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"fly" : {
+								"type" : "FLYING",
+								"duration" : "N_TURNS"
+							}
+						}
 					}
 				}
 			}
